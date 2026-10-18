@@ -130,3 +130,33 @@ code { color: #c5d7ff; background: #0b1425; padding: 2px 5px; border-radius: 5px
 @media (max-width: 720px) { .hero { padding-top: 40px; } .filter-grid { grid-template-columns: 1fr 1fr; } .reset-button { width: 100%; } .school-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; } .emblem-preview { height: 145px; padding: 15px; } .card-body { padding: 11px; } .card-actions { padding: 0 11px 11px; } .contribute { align-items: flex-start; flex-wrap: wrap; } .contribute .secondary-button { margin-left: 55px; } }
 @media (max-width: 430px) { .topbar { height: 66px; } .brand strong { font-size: 12px; } .brand-mark { width: 36px; height: 36px; } .github-link { font-size: 10px; padding: 8px; } .container { width: calc(100% - 24px); } .stats { gap: 5px; } .stats div { padding: 8px; gap: 5px; flex-direction: column; align-items: center; } .stats span { font-size: 9px; } .filter-grid { grid-template-columns: 1fr; gap: 10px; } .filter-foot { align-items: flex-start; flex-direction: column; } .sort-control { width: 100%; justify-content: space-between; } .sort-control select { flex: 1; max-width: 190px; } .school-name { font-size: 12px; } .location { font-size: 10px; } .card-actions { grid-template-columns: 1fr; } .card-actions a, .card-actions button { min-height: 34px; } .footer { flex-direction: column; } }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; scroll-behavior: auto !important; } }
+
+/* ปุ่มดาวน์โหลด PNG HD */
+.png-button {
+  background: #15382f;
+  color: #b6f1dc;
+  border: 1px solid #28614f;
+}
+
+.png-button:hover:not(:disabled) {
+  background: #1e4b3e;
+}
+
+.png-button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* ปุ่มดาวน์โหลดในหน้ารายละเอียด */
+.detail-downloads {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.png-download {
+  background: #15382f;
+  color: #b6f1dc;
+  border: 1px solid #28614f;
+}
