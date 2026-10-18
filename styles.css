@@ -65,16 +65,16 @@ select:disabled { opacity: .48; cursor: not-allowed; }
   height: 180px; 
   display: grid; 
   place-items: center; 
-  padding: 20px; 
+  padding: 15px; /* ลด padding ลงนิดนึงเผื่อพื้นที่ให้รูป */
   background: radial-gradient(circle, #273754 0, #172239 56%, #141e31 100%); 
   border-bottom: 1px solid #ffffff0a; 
-  position: relative; /* เพิ่มบรรทัดนี้ */
-  overflow: hidden;   /* เพิ่มบรรทัดนี้เพื่อตัดส่วนที่ล้นออก */
 }
 .emblem-preview img { 
   display: block; 
   max-width: 100%; 
-  max-height: 100%; /* เปลี่ยนจาก height: 100% เป็น max-height */
+  max-height: 140px; /* บังคับความสูงสูงสุดของรูปให้อยู่ในกรอบ 140px (จากช่อง 180px) */
+  width: auto;       /* ให้ความกว้างปรับตามสัดส่วนจริงรูป จะได้ไม่ยืดไม่เบี้ยว */
+  height: auto;      /* ให้ความสูงปรับตามสัดส่วนจริง */
   object-fit: contain; 
 }
 .emblem-fallback { width: 82px; height: 82px; border: 1px dashed #657896; border-radius: 50%; display: grid; place-items: center; color: #9fb1cf; font-size: 10px; text-align: center; }
