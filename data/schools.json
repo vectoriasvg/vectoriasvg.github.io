@@ -7,6 +7,7 @@
     "province": "เชียงใหม่",
     "district": "เมืองเชียงใหม่",
     "file": "assets/emblems/yrc-cm-mcm.svg",
+    "pngFile": "assets/emblems/yrc-cm-mcm.png",
     "source": "https://www.yupparaj.ac.th/uploads/yrc_special68.pdf",
     "notes": "เฉดสีบานเย็นของตรา อ้างอิงจากตราสัญลักษณ์จาก Facebook ทางการของโรงเรียน",
     "addedAt": "2026-10-18"
@@ -19,6 +20,7 @@
     "province": "กรุงเทพมหานคร",
     "district": "พระนคร",
     "file": "",
+    "pngFile": "",
     "source": "",
     "notes": "รายการตัวอย่างสำหรับทดสอบตัวกรอง ลบหรือแก้ไขได้",
     "addedAt": "2026-10-18"
