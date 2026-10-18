@@ -106,8 +106,22 @@ code { color: #c5d7ff; background: #0b1425; padding: 2px 5px; border-radius: 5px
 .detail-dialog::backdrop { background: #050916cc; backdrop-filter: blur(5px); }
 .dialog-close { display: block; margin: 12px 12px 0 auto; width: 34px; height: 34px; border-radius: 9px; border: 1px solid var(--border); background: var(--surface-2); color: var(--text); font-size: 21px; }
 .dialog-inner { padding: 0 25px 25px; }
-.dialog-image { height: 280px; display: grid; place-items: center; padding: 20px; background: #172239; border-radius: 12px; }
-.dialog-image img { max-width: 100%; max-height: 100%; object-fit: contain; }
+.dialog-image { 
+  height: 280px; 
+  display: grid; 
+  place-items: center; 
+  padding: 20px; 
+  background: #172239; 
+  border-radius: 12px; 
+  overflow: hidden; /* เพิ่มบรรทัดนี้ไว้กันเหนียว เหมือนหน้าแรก */
+}
+.dialog-image img { 
+  max-width: 100%; 
+  max-height: 220px; /* จำกัดความสูงของรูปใน Dialog ไม่ให้เกิน 220px (จากช่อง 280px) */
+  width: auto;       /* ให้ปรับสัดส่วนออโต้ ไม่ให้รูปยืดเบี้ยว */
+  height: auto;      /* ให้ปรับสัดส่วนออโต้ */
+  object-fit: contain; 
+}
 .dialog-inner h2 { font-size: 20px; line-height: 1.5; }
 .dialog-inner p { color: var(--muted); font-size: 13px; }
 .dialog-download { display: inline-flex; padding: 10px 16px; border-radius: 9px; background: var(--accent); color: #10182a; font-size: 12px; font-weight: 700; }
