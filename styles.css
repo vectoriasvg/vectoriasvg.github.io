@@ -133,6 +133,14 @@ code { color: #c5d7ff; background: #0b1425; padding: 2px 5px; border-radius: 5px
 
 /* ปุ่มดาวน์โหลด PNG HD */
 .png-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 36px;
+  padding: 0 12px;
+  border-radius: 9px;
+  font-size: 11px;
+  font-weight: 600;
   background: #15382f;
   color: #b6f1dc;
   border: 1px solid #28614f;
@@ -156,7 +164,19 @@ code { color: #c5d7ff; background: #0b1425; padding: 2px 5px; border-radius: 5px
 }
 
 .png-download {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 36px;
+  padding: 0 16px;
+  border-radius: 9px;
+  font-size: 12px;
+  font-weight: 700;
   background: #15382f;
   color: #b6f1dc;
   border: 1px solid #28614f;
+}
+
+.png-download:hover {
+  background: #1e4b3e;
 }
