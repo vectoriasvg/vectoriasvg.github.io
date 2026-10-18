@@ -1,0 +1,26 @@
+[
+  {
+    "id": "yupparaj-wittayalai",
+    "name": "โรงเรียนยุพราชวิทยาลัย",
+    "alternateName": "Yupparaj Wittayalai School",
+    "region": "ภาคเหนือ",
+    "province": "เชียงใหม่",
+    "district": "เมืองเชียงใหม่",
+    "file": "assets/emblems/yupparaj-wittayalai.svg",
+    "source": "",
+    "notes": "ตัวอย่างข้อมูลสำหรับทดสอบระบบ สามารถเปลี่ยนเป็นไฟล์ตราที่ตรวจสอบแล้ว",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "example-school-02",
+    "name": "ตัวอย่างโรงเรียน (ยังไม่มีไฟล์)",
+    "alternateName": "",
+    "region": "ภาคกลาง",
+    "province": "กรุงเทพมหานคร",
+    "district": "พระนคร",
+    "file": "",
+    "source": "",
+    "notes": "รายการตัวอย่างสำหรับทดสอบตัวกรอง ลบหรือแก้ไขได้",
+    "addedAt": "2026-10-18"
+  }
+]

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="คลังดาวน์โหลดไฟล์ SVG ตราโรงเรียน ค้นหาและกรองตามภาค จังหวัด และอำเภอ">
+  <title>School Emblem Library — คลังตราโรงเรียน SVG</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="หน้าหลัก School Emblem Library">
+      <span class="brand-mark" aria-hidden="true">SE</span>
+      <span><strong>School Emblem Library</strong><small>คลังไฟล์ตราโรงเรียน SVG</small></span>
+    </a>
+    <a class="github-link" href="https://github.com/" target="_blank" rel="noreferrer">GitHub Pages ↗</a>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">OPEN VECTOR ARCHIVE</p>
+      <h1>ค้นหา <span>ตราโรงเรียน</span> ที่คุณต้องการ</h1>
+      <p class="hero-copy">คลังไฟล์เวกเตอร์สำหรับค้นหา ดูตัวอย่าง และดาวน์โหลดตราโรงเรียนในรูปแบบ SVG</p>
+      <div class="stats" aria-live="polite">
+        <div><strong id="total-count">0</strong><span>รายการทั้งหมด</span></div>
+        <div><strong id="shown-count">0</strong><span>รายการที่แสดง</span></div>
+        <div><strong>SVG</strong><span>ไฟล์เวกเตอร์</span></div>
+      </div>
+    </section>
+
+    <section class="filters" aria-label="ค้นหาและกรองตราโรงเรียน">
+      <div class="search-wrap">
+        <label for="search-input">ค้นหาชื่อโรงเรียน</label>
+        <div class="search-field">
+          <span aria-hidden="true">⌕</span>
+          <input id="search-input" type="search" placeholder="เช่น ยุพราชวิทยาลัย..." autocomplete="off">
+          <button id="clear-search" class="clear-search" type="button" aria-label="ล้างคำค้นหา" hidden>×</button>
+        </div>
+      </div>
+      <div class="filter-grid">
+        <div class="field">
+          <label for="region-filter">ภาค</label>
+          <select id="region-filter"><option value="">ทุกภาค</option></select>
+        </div>
+        <div class="field">
+          <label for="province-filter">จังหวัด</label>
+          <select id="province-filter" disabled><option value="">ทุกจังหวัด</option></select>
+        </div>
+        <div class="field">
+          <label for="district-filter">อำเภอ</label>
+          <select id="district-filter" disabled><option value="">ทุกอำเภอ</option></select>
+        </div>
+        <button id="reset-filters" class="reset-button" type="button">ล้างตัวกรอง</button>
+      </div>
+      <div class="filter-foot">
+        <span id="result-summary">กำลังโหลดข้อมูล…</span>
+        <label class="sort-control" for="sort-filter">เรียงตาม
+          <select id="sort-filter">
+            <option value="name">ชื่อโรงเรียน (ก–ฮ)</option>
+            <option value="province">จังหวัด</option>
+            <option value="newest">เพิ่มล่าสุด</option>
+          </select>
+        </label>
+      </div>
+    </section>
+
+    <section class="results-section">
+      <div id="school-grid" class="school-grid" aria-live="polite"></div>
+      <div id="empty-state" class="empty-state" hidden>
+        <div class="empty-icon" aria-hidden="true">⌕</div>
+        <h2>ไม่พบตราโรงเรียน</h2>
+        <p>ลองเปลี่ยนคำค้นหาหรือเลือกตัวกรองอื่น</p>
+        <button id="empty-reset" class="primary-button" type="button">แสดงทั้งหมด</button>
+      </div>
+      <div class="load-more-wrap"><button id="load-more" class="secondary-button" type="button" hidden>แสดงเพิ่มเติม</button></div>
+    </section>
+
+    <section class="contribute">
+      <div class="contribute-icon" aria-hidden="true">＋</div>
+      <div>
+        <h2>อยากเพิ่มตราโรงเรียน?</h2>
+        <p>เพิ่มไฟล์ SVG ในโฟลเดอร์ <code>assets/emblems/</code> แล้วเพิ่มข้อมูลใน <code>data/schools.json</code></p>
+      </div>
+      <a href="https://github.com/" target="_blank" rel="noreferrer" class="secondary-button">ร่วมพัฒนาบน GitHub ↗</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>School Emblem Library</span>
+    <span>ไฟล์และตราสัญลักษณ์อาจมีเจ้าของสิทธิ์ตามกฎหมาย</span>
+  </footer>
+
+  <dialog id="detail-dialog" class="detail-dialog">
+    <form method="dialog"><button class="dialog-close" aria-label="ปิดหน้าต่าง">×</button></form>
+    <div id="dialog-content"></div>
+  </dialog>
+</body>
+</html>
