@@ -7,9 +7,22 @@
     "province": "เชียงใหม่",
     "district": "เมืองเชียงใหม่",
     "file": "assets/emblems/yrc-cm-mcm.svg",
-    "pngFile": "assets/emblems/yrc-cm-mcm.png",
+    "pngFile": "",
     "source": "https://www.yupparaj.ac.th/uploads/yrc_special68.pdf",
     "notes": "เฉดสีบานเย็นของตรา อ้างอิงจากตราสัญลักษณ์จาก Facebook ทางการของโรงเรียน",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "cmu-cm-mcm",
+    "name": "โรงเรียนสาธิตมหาวิทยาลัยเชียงใหม่",
+    "alternateName": "Chiang Mai University Demonstration School",
+    "region": "ภาคเหนือ",
+    "province": "เชียงใหม่",
+    "district": "เมืองเชียงใหม่",
+    "file": "assets/emblems/cmu-cm-mcm.svg",
+    "pngFile": "",
+    "source": "https://www.satitcmu.ac.th/",
+    "notes": "",
     "addedAt": "2026-10-18"
   },
   {
